@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VHrecorder</string>
+    <string name="name">Name</string>
+    <string name="nameField">Write the name of the person</string>
+    <string name="environment">Environment</string>
+    <string name="environmentField">Write the place</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="begin">Begin record</string>
+    <string name="pcm8">PCM 8 bits</string>
+    <string name="pcm16">PCM 16 bits</string>
+    <string name="fs8">FS = 8 kHz</string>
+    <string name="fs11025">FS = 11.025 kHz</string>
+    <string name="fs22050">FS = 22.050 kHz</string>
+    <string name="fs44100">FS = 44.100 kHz</string>
+    <string name="word2say">Word to say</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Voice Hands</string>
+    <string name="title_activity_vhmain">Voice Hands</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="voice">Traductor de voz</string>
+    <string name="text">Síntesis de voz</string>
+    <string name="textTitle">Presiona para hablar</string>
+    <string name="dictionary">Diccionario</string>
+    <string name="talk">Hablar</string>
+    <string name="title_word_list">Palabras</string>
+    <string name="title_word_detail">Detalle de palabra</string>
+
+    <string name="pressRecord">Ingresa\ntu\nmensaje</string>
+    <string name="recording">Grabando</string>
+</resources>

@@ -1,0 +1,11 @@
+
+\begin{abstract}
+
+En este trabajo se presenta el diseño de una aplicación móvil que permitirá la comunicación básica entre personas que usan el lenguaje de señas mexicano con personas que no lo utilizan mediante el reconocimiento de voz y una entrada por texto para su posterior síntesis de voz.
+
+El reconocimiento de voz se lleva a cabo en un servidor que se comunica con la aplicación a través de un servicio web, el reconocimiento se lleva a cabo con una red neuronal \textit{feedforward Pattern Recognition} teniendo como entrada los coeficientes cepstrales en la frecuencia de MEL cuantizados vectorialmente. La adquisición de la señal de voz se realiza con una frecuencia de muestreo de 8 kHz con 8 bits de PCM. Las palabras reconocidas se presentarán en la pantalla del móvil en forma de imágenes que corresponden a las señas del diccionario de lengua de señas mexicana de la CONAPRED.
+
+La aplicación móvil realiza la síntesis de voz de mensajes escritos haciendo uso de la API de Google y además presenta un diccionario auxiliar que informa sobre el cómo realizar la seña de diferentes palabras por categorías.
+
+\keywords{Lengua de señas, Red neuronal, Reconocimiento de voz, Aplicación móvil}
+\end{abstract}

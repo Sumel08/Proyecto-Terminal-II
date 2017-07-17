@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lemus.oscar.voicehands">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/voice_hands"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".VHSplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VHMainActivity"
+            android:label="@string/title_activity_vhmain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dictionary.WordListActivity"
+            android:label="@string/title_word_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dictionary.WordDetailActivity"
+            android:label="@string/title_word_detail"
+            android:parentActivityName=".dictionary.WordListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lemus.oscar.voicehands.dictionary.WordListActivity" />
+        </activity>
+        <activity android:name=".voice.RecognitionActivity"></activity>
+    </application>
+
+</manifest>

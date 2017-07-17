@@ -1,0 +1,91 @@
+\documentclass[letterpaper,12pt,spanish]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amssymb, amsmath, amsbsy} % simbolitos
+\usepackage{upgreek} % para poner letras griegas sin cursiva
+\usepackage{cancel} % para tachar
+\usepackage{mathdots} % para el comando \iddots
+\usepackage{mathrsfs} % para formato de letra
+\usepackage{stackrel} % para el comando \stackbin
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{vmargin}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref} 
+\usepackage{multirow} % para las tablas
+\usepackage{pdflscape}
+\usepackage[final]{pdfpages}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multicol} 
+
+
+
+\usepackage{pgfgantt}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{amsfonts}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\setpapersize{USletter}
+\setmargins{2.5cm}       % margen izquierdo
+{1.5cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{23.42cm}                    % altura del texto
+{10pt}                           % altura de los encabezados
+{1cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{0.5cm}                           % espacio entre el texto y el pie de página
+
+\providecommand{\keywords}[1]{\textbf{\textit{Palabras clave---}} #1}
+
+\title{Aplicación móvil para la comunicación con personas que utilizan el lenguaje de señas.}
+\author{Lemus Pichardo Oscar Alejandro}
+
+\begin{document}
+
+\pagenumbering{gobble}
+%\includepdf[pages=1,pagecommand={},offset=2.5cm -3cm]{coverpage/Thesis}
+%\includepdf[pages=2,pagecommand={},offset=2.5cm -3cm]{coverpage/Thesis}
+%\includepdf[pages=3,pagecommand={},offset=2.5cm -3cm]{coverpage/Thesis}
+
+
+\include{./sections/abstract}
+
+\tableofcontents % indice de contenidos
+
+\newpage
+%\cleardoublepage
+%\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+\listoffigures % indice de figuras
+
+%\cleardoublepage
+%\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+\listoftables % indice de tablas
+\renewcommand{\thesection}{\Roman{section}} 
+
+\include{./sections/introduction}
+\include{./sections/problemStatement}
+\include{./sections/proposedSolution}
+\include{./sections/objectives}
+\renewcommand{\thesection}{\arabic{section}} 
+%\setcounter{section}{0}
+\include{./sections/stateOfTheArt}
+\include{./sections/theoreticalFramework}
+\include{./sections/analysis}
+\include{./sections/design}
+\include{./sections/conclusions}
+\include{./sections/acronymList}
+
+\newpage
+\bibliographystyle{ieeetr}
+\renewcommand{\bibname}{Bibliography}
+\bibliography{ref/references}
+
+\end{document}
